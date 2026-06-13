@@ -1,1 +1,1 @@
-Disciplina realizada no semestre 2026/01.
+Disciplina cursada no 5° Período - Semestre 2026/01
