@@ -1,2 +1,1 @@
-# Disciplina de Sistemas Operacionais
-4º Período - 2025/02
+Disciplina cursada no 4° Período - Semestre 2025/02
