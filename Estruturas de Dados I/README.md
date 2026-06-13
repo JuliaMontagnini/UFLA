@@ -1,1 +1,1 @@
-Disciplina cursada no semestre 2025/02.
+Disciplina cursada no 4° Período - Semestre 2025/02
