@@ -18,6 +18,6 @@ public class Servidor extends Usuario{
 
     @Override
     public int getLimiteEmprestimos(){
-        return 5;
+        return 4;
     }
 }
