@@ -1,7 +1,7 @@
 package br.ufla.gct052.biblioteca.model;
 
 public abstract class Usuario {
-    private String id;
+    private final String id;
     private String nome;
     private String email;
     private int emprestimosAtivos;
@@ -56,6 +56,6 @@ public abstract class Usuario {
 
     @Override
     public String toString(){
-        return "Usuário: " + getId() + ", " + getNome();
+        return getClass() + ": " + getId() + ", " + getNome();
     }
 }

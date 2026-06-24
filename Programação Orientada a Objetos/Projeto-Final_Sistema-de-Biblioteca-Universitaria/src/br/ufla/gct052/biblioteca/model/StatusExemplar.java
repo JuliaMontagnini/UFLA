@@ -1,5 +1,5 @@
 package br.ufla.gct052.biblioteca.model;
 
-public class StatusExemplar {
-    
+enum StatusExemplar{
+    DISPONIVEL, EMPRESTADO, BLOQUEADO
 }
