@@ -13,7 +13,7 @@ print(f"\n=== INSERINDO VALORES ===")
 bst.largura(bst.raiz)
 
 print("\n\n=== PERCURSOS ===")
-print("Pŕe-ordem:", end=" ")
+print("Pré-ordem:", end=" ")
 bst.pre_ordem(bst.raiz)
 print("\nEm-ordem:", end= " ")
 bst.em_ordem(bst.raiz)
