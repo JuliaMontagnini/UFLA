@@ -1,0 +1,44 @@
+
+=== INSERINDO VALORES ===
+10 5 15 2 7 12 20 
+
+=== PERCURSOS ===
+Pŕe-ordem: 10 5 2 7 15 12 20 
+Em-ordem: 2 5 7 10 12 15 20 
+Pós-ordem: 2 7 5 12 20 15 10 
+
+=== INFORMAÇÕES ===
+Altura da árvore: 2
+Quantidade de nós: 7
+Quantidade de folhas: 4
+Menor valor: 2
+Maior valor: 20
+
+=== BUSCAS ===
+Buscar 7: encontrado
+Buscar 12: encontrado
+Buscar 99: não encontrado
+Buscar 1: não encontrado
+
+=== REMOÇÃO DE NÓ FOLHA ===
+Removendo o nó 2...
+Percurso em-ordem: 5 7 10 12 15 20 
+
+=== REMOÇÃO DE NÓ COM UM FILHO ===
+Nova árvore: 10 5 15 2 7 6 
+
+Removendo o nó 7...
+Percurso em-ordem: 2 5 6 10 15 
+
+=== REMOÇÃO DE NÓ COM DOIS FILHOS ===
+Nova árvore: 10 5 15 2 7 12 20 
+
+Removendo o nó 10...
+Percurso em-ordem: 2 5 7 12 15 20 
+
+=== ÁRVORE DEGENERADA ===
+Valores inseridos: 1 2 3 4 5 
+Percurso em-ordem: 1 2 3 4 5 
+Altura: 4
+Quantidade de nós: 5
+Quantidade de folhas: 1
