@@ -171,4 +171,13 @@ public class BibliotecaService implements Relatorio{
             }
         }
     }
+
+    public void exibirUsuarios() {
+        System.out.println("\n=== Usuários cadastrados ===");
+        for (Usuario u : usuarios.values()) {
+            System.out.println("Usuário: " + u.getNome() + " (" + u.getClass().getSimpleName() + ")");
+            System.out.println("Limite de empréstimos: " + u.getLimiteEmprestimos());
+            System.out.println("Prazo de empréstimo: " + u.getPrazoEmprestimoDias() + "\n");
+        }
+    }
 }

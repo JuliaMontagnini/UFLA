@@ -19,14 +19,9 @@ public class App {
         biblioteca.cadastrarUsuario(servidor1);
         System.out.println("Servidor cadastrado: " + servidor1.getNome());
 
-        System.out.println("\nLimite de empréstimos para o aluno: " + aluno1.getLimiteEmprestimos());
-        System.out.println("Prazo de empréstimo para o aluno: " + aluno1.getPrazoEmprestimoDias());
-        System.out.println("\nLimite de empréstimos para o professor: " + professor1.getLimiteEmprestimos());
-        System.out.println("Prazo de empréstimo para o professor: " + professor1.getPrazoEmprestimoDias());
-        System.out.println("\nLimite de empréstimos para o servidor: " + servidor1.getLimiteEmprestimos());
-        System.out.println("Prazo de empréstimo para o servidor: " + servidor1.getPrazoEmprestimoDias());
+        biblioteca.exibirUsuarios();
 
-        System.out.println("\n=== Cadastro de livros ===");
+        System.out.println("=== Cadastro de livros ===");
         Livro livro1 = new Livro("978-85-6457-416-8", "Fundamentos da programação de computadores", "Ascencio", 2012);
         biblioteca.cadastrarLivro(livro1);
         System.out.println("Livro cadastrado: " + livro1.getTitulo());
