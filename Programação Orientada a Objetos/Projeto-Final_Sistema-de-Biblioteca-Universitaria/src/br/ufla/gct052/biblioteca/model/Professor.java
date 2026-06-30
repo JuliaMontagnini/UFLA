@@ -20,4 +20,9 @@ public class Professor extends Usuario{
     public int getLimiteEmprestimos(){
         return 5;
     }
+
+    @Override
+    public int getPrazoEmprestimoDias(){
+        return 14;
+    }
 }

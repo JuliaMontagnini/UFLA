@@ -2,11 +2,11 @@ package br.ufla.gct052.biblioteca.model;
 
 import java.util.ArrayList;
 
-public class Livro {
-    private String isbn;
-    private String titulo;
-    private String autores;
-    private int ano;
+public class Livro implements Relatorio{
+    private final String isbn;
+    private final String titulo;
+    private final String autores;
+    private final int ano;
     private ArrayList <Exemplar> exemplares;
 
     public Livro(String isbn, String titulo, String autores, int ano){
@@ -58,6 +58,14 @@ public class Livro {
             if(exemplar.getStatus() == StatusExemplar.DISPONIVEL){
                 System.out.println(exemplar + "\n");
             }
+        }
+    }
+
+    public void gerarRelatorio(){
+        System.out.println("=== RELATÓRIO DE EXEMPLARES ===");
+        System.out.println("LIVRO: " + getTitulo() + " | " + getIsbn());
+        for (Exemplar exemplar : exemplares) {
+            System.out.println(exemplar);
         }
     }
 

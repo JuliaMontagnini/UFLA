@@ -1,7 +1,7 @@
 package br.ufla.gct052.biblioteca.model;
 
 public class Aluno extends Usuario{
-    private String curso;
+    private final String curso;
     private int periodo; // int pois pode ser incrementado ao fim do semestre
 
     public Aluno(String id, String nome, String email, String curso, int periodo){
@@ -19,5 +19,10 @@ public class Aluno extends Usuario{
     @Override
     public int getLimiteEmprestimos(){
         return 3;
+    }
+
+    @Override
+    public int getPrazoEmprestimoDias(){
+        return 7;
     }
 }

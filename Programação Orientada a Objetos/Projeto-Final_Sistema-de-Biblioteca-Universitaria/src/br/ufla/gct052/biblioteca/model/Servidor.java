@@ -20,4 +20,9 @@ public class Servidor extends Usuario{
     public int getLimiteEmprestimos(){
         return 4;
     }
+
+    @Override
+    public int getPrazoEmprestimoDias(){
+        return 10;
+    }
 }

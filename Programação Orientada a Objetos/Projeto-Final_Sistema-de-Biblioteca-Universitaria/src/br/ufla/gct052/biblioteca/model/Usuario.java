@@ -36,6 +36,7 @@ public abstract class Usuario {
     }
 
     public abstract int getLimiteEmprestimos();
+    public abstract int getPrazoEmprestimoDias();
 
     public boolean podeEmprestar(){
         if(getEmprestimosAtivos() < getLimiteEmprestimos()){
@@ -44,14 +45,22 @@ public abstract class Usuario {
         return false;
     }
 
-    protected int incrementarEmprestimos(){
+    protected void incrementarEmprestimos(){
         emprestimosAtivos += 1;
-        return emprestimosAtivos;
     }
 
-    protected int decrementarEmprestimos(){
-        emprestimosAtivos -= 1;
-        return emprestimosAtivos;
+    protected void decrementarEmprestimos(){
+        if(emprestimosAtivos > 0){
+            emprestimosAtivos -= 1;
+        }
+    }
+
+    public void registrarEmprestimo() { // o direto de incrementar é protected
+        incrementarEmprestimos();
+    }
+
+    public void registrarDevolucao() {
+        decrementarEmprestimos();
     }
 
     @Override
